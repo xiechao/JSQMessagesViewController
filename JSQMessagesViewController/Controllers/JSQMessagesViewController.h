@@ -39,6 +39,8 @@
  */
 @property (weak, nonatomic, readonly) JSQMessagesCollectionView *collectionView;
 
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
 /**
  *  Returns the input toolbar view object managed by this view controller.
  *  This view controller is the toolbar's delegate.
