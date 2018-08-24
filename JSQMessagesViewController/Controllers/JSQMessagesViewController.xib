@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="collectionView" destination="l9u-2b-4LK" id="bLP-6g-CkO"/>
                 <outlet property="inputToolbar" destination="BoD-Az-3DM" id="w74-g9-1qA"/>
+                <outlet property="safeFrameView" destination="6A5-gn-gGT" id="REZ-4k-m6V"/>
                 <outlet property="toolbarBottomLayoutGuide" destination="rHs-6q-NX4" id="d6h-iu-VMX"/>
                 <outlet property="toolbarHeightConstraint" destination="HIk-02-qcW" id="jE8-xC-1eD"/>
                 <outlet property="view" destination="mUa-cS-ru4" id="nki-T1-RTI"/>
@@ -24,6 +25,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-gn-gGT" userLabel="Safe View Frame">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l9u-2b-4LK" customClass="JSQMessagesCollectionView">
                     <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,12 +46,16 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="O7o-1R-l4e" firstAttribute="trailing" secondItem="BoD-Az-3DM" secondAttribute="trailing" id="7xc-Ha-asg"/>
+                <constraint firstItem="O7o-1R-l4e" firstAttribute="trailing" secondItem="6A5-gn-gGT" secondAttribute="trailing" id="JpA-6b-yOg"/>
                 <constraint firstItem="l9u-2b-4LK" firstAttribute="leading" secondItem="O7o-1R-l4e" secondAttribute="leading" id="MmF-oh-Y75"/>
                 <constraint firstItem="O7o-1R-l4e" firstAttribute="trailing" secondItem="l9u-2b-4LK" secondAttribute="trailing" id="O9u-TA-A0e"/>
                 <constraint firstItem="O7o-1R-l4e" firstAttribute="bottom" secondItem="l9u-2b-4LK" secondAttribute="bottom" id="Re7-WW-UmS"/>
                 <constraint firstItem="l9u-2b-4LK" firstAttribute="top" secondItem="O7o-1R-l4e" secondAttribute="top" id="dCQ-DM-Wdj"/>
+                <constraint firstItem="6A5-gn-gGT" firstAttribute="top" secondItem="O7o-1R-l4e" secondAttribute="top" id="oek-Xg-F4J"/>
                 <constraint firstItem="O7o-1R-l4e" firstAttribute="bottom" secondItem="BoD-Az-3DM" secondAttribute="bottom" id="rHs-6q-NX4"/>
                 <constraint firstItem="BoD-Az-3DM" firstAttribute="leading" secondItem="O7o-1R-l4e" secondAttribute="leading" id="ts7-8f-0lH"/>
+                <constraint firstItem="O7o-1R-l4e" firstAttribute="bottom" secondItem="6A5-gn-gGT" secondAttribute="bottom" id="vbm-AU-AT7"/>
+                <constraint firstItem="6A5-gn-gGT" firstAttribute="leading" secondItem="O7o-1R-l4e" secondAttribute="leading" id="zjC-Ri-ihm"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="O7o-1R-l4e"/>

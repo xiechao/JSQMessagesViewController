@@ -171,6 +171,7 @@
  *  @discussion Use this property to adjust the top content inset to account for a custom subview at the top of your view controller.
  */
 @property (assign, nonatomic) CGFloat topContentAdditionalInset;
+@property (weak, nonatomic) IBOutlet UIView *safeFrameView;
 
 #pragma mark - Class methods
 
