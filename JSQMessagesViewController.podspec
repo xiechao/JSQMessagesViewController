@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
 	s.summary = 'An elegant messages UI library for iOS.'
 	s.license = 'MIT'
 	s.platform = :ios, '7.0'
+	s.homepage = "https://github.com/xiechao/JSQMessagesViewController"
 
 	s.author = 'Jesse Squires'
 
@@ -16,6 +17,6 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 
 	s.dependency 'JSQSystemSoundPlayer', '~> 2.0.1'
-	
+
 	s.deprecated = true
 end
